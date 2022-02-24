@@ -1,0 +1,718 @@
+Script started on Thu Feb 24 04:25:59 2022
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004h[7mdocker-compose -f docker-compose.dev.yml down --volumes[27m[55D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27m-[27mf[27m [27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m.[27md[27me[27mv[27m.[27my[27mm[27ml[27m [27md[27mo[27mw[27mn[27m [27m-[27m-[27mv[27mo[27ml[27mu[27mm[27me[27ms[?2004l
+[1A[1B[0G[?25l[+] Running 0/0
+[37m ⠋ Container todo-backend-mongo-1  Stopping                                                                            0.1s
+[0m[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+[34m ⠿ Container todo-backend-mongo-1  Removed                                                                             0.2s
+[0m[37m ⠋ Network todo-backend_default    Removing                                                                            0.0s
+[0m[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+[34m ⠿ Container todo-backend-mongo-1  Removed                                                                             0.2s
+[0m[34m ⠿ Network todo-backend_default    Removed                                                                             0.1s
+[0m[?25h[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004h[7mdocker-compose -f docker-compose.dev.yml up[27m[43D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27m-[27mf[27m [27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m.[27md[27me[27mv[27m.[27my[27mm[27ml[27m [27mu[27mp[?2004l
+[1A[1B[0G[?25l[+] Running 2/0
+[34m ⠿ Network todo-backend_default    Created                                                                             0.0s
+[0m[34m ⠿ Container todo-backend-mongo-1  Created                                                                             0.0s
+[0m[?25hAttaching to todo-backend-mongo-1
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.747+00:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"thread1","msg":"Initialized wire specification","attr":{"spec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":13},"outgoing":{"minWireVersion":0,"maxWireVersion":13},"isInternalClient":true}}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.747+00:00"},"s":"I",  "c":"CONTROL",  "id":23285,   "ctx":"thread1","msg":"Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'"}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.748+00:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"thread1","msg":"No TransportLayer configured during NetworkInterface startup"}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.748+00:00"},"s":"I",  "c":"NETWORK",  "id":4648601, "ctx":"thread1","msg":"Implicit TCP FastOpen unavailable. If TCP FastOpen is required, set tcpFastOpenServer, tcpFastOpenClient, and tcpFastOpenQueueSize."}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.749+00:00"},"s":"W",  "c":"ASIO",     "id":22601,   "ctx":"thread1","msg":"No TransportLayer configured during NetworkInterface startup"}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.749+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"thread1","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationDonorService","ns":"config.tenantMigrationDonors"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.749+00:00"},"s":"I",  "c":"REPL",     "id":5123008, "ctx":"thread1","msg":"Successfully registered PrimaryOnlyService","attr":{"service":"TenantMigrationRecipientService","ns":"config.tenantMigrationRecipients"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.749+00:00"},"s":"I",  "c":"CONTROL",  "id":5945603, "ctx":"thread1","msg":"Multi threading initialized"}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.749+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"a292e69c88a7"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.749+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"5.0.6","gitVersion":"212a8dbb47f07427dae194a9c75baec1d81d9259","openSSLVersion":"OpenSSL 1.1.1f  31 Mar 2020","modules":[],"allocator":"tcmalloc","environment":{"distmod":"ubuntu2004","distarch":"aarch64","target_arch":"aarch64"}}}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.749+00:00"},"s":"I",  "c":"CONTROL",  "id":51765,   "ctx":"initandlisten","msg":"Operating System","attr":{"os":{"name":"Ubuntu","version":"20.04"}}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.749+00:00"},"s":"I",  "c":"CONTROL",  "id":21951,   "ctx":"initandlisten","msg":"Options set by command line","attr":{"options":{"net":{"bindIp":"*"},"security":{"authorization":"enabled"}}}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.754+00:00"},"s":"I",  "c":"STORAGE",  "id":22270,   "ctx":"initandlisten","msg":"Storage engine to use detected by data files","attr":{"dbpath":"/data/db","storageEngine":"wiredTiger"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:19.758+00:00"},"s":"I",  "c":"STORAGE",  "id":22315,   "ctx":"initandlisten","msg":"Opening WiredTiger","attr":{"config":"create,cache_size=482M,session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),builtin_extension_config=(zstd=(compression_level=6)),file_manager=(close_idle_time=600,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress,compact_progress],"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:20.458+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1645669580:458083][1:0xffff887f2980], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 14 through 15"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:22.850+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1645669582:850375][1:0xffff887f2980], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 15 through 15"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.235+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1645669585:235260][1:0xffff887f2980], txn-recover: [WT_VERB_RECOVERY_ALL] Main recovery loop: starting at 14/27136 to 15/256"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.286+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1645669585:285998][1:0xffff887f2980], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 14 through 15"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.325+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1645669585:325197][1:0xffff887f2980], txn-recover: [WT_VERB_RECOVERY_PROGRESS] Recovering log 15 through 15"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.346+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1645669585:346135][1:0xffff887f2980], txn-recover: [WT_VERB_RECOVERY_ALL] Set global recovery timestamp: (0, 0)"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.346+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1645669585:346178][1:0xffff887f2980], txn-recover: [WT_VERB_RECOVERY_ALL] Set global oldest timestamp: (0, 0)"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.347+00:00"},"s":"I",  "c":"STORAGE",  "id":22430,   "ctx":"initandlisten","msg":"WiredTiger message","attr":{"message":"[1645669585:347007][1:0xffff887f2980], WT_SESSION.checkpoint: [WT_VERB_CHECKPOINT_PROGRESS] saving checkpoint snapshot min: 1, snapshot max: 1 snapshot count: 0, oldest timestamp: (0, 0) , meta checkpoint timestamp: (0, 0) base write gen: 621"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.364+00:00"},"s":"I",  "c":"STORAGE",  "id":4795906, "ctx":"initandlisten","msg":"WiredTiger opened","attr":{"durationMillis":5606}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.364+00:00"},"s":"I",  "c":"RECOVERY", "id":23987,   "ctx":"initandlisten","msg":"WiredTiger recoveryTimestamp","attr":{"recoveryTimestamp":{"$timestamp":{"t":0,"i":0}}}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.366+00:00"},"s":"I",  "c":"STORAGE",  "id":4366408, "ctx":"initandlisten","msg":"No table logging settings modifications are required for existing WiredTiger tables","attr":{"loggingEnabled":true}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.381+00:00"},"s":"I",  "c":"STORAGE",  "id":22262,   "ctx":"initandlisten","msg":"Timestamp monitor starting"}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.395+00:00"},"s":"I",  "c":"NETWORK",  "id":4915702, "ctx":"initandlisten","msg":"Updated wire specification","attr":{"oldSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":0,"maxWireVersion":13},"outgoing":{"minWireVersion":0,"maxWireVersion":13},"isInternalClient":true},"newSpec":{"incomingExternalClient":{"minWireVersion":0,"maxWireVersion":13},"incomingInternalClient":{"minWireVersion":13,"maxWireVersion":13},"outgoing":{"minWireVersion":13,"maxWireVersion":13},"isInternalClient":true}}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.398+00:00"},"s":"I",  "c":"STORAGE",  "id":5071100, "ctx":"initandlisten","msg":"Clearing temp directory"}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.400+00:00"},"s":"I",  "c":"CONTROL",  "id":20536,   "ctx":"initandlisten","msg":"Flow Control is enabled on this deployment"}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.402+00:00"},"s":"I",  "c":"FTDC",     "id":20625,   "ctx":"initandlisten","msg":"Initializing full-time diagnostic data capture","attr":{"dataDirectory":"/data/db/diagnostic.data"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.412+00:00"},"s":"I",  "c":"REPL",     "id":6015317, "ctx":"initandlisten","msg":"Setting new configuration state","attr":{"newState":"ConfigReplicationDisabled","oldState":"ConfigPreStart"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.414+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.414+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:25.414+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:37.213+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.26.0.1:60926","uuid":"bf544553-f4af-4a9f-9db1-933effee67aa","connectionId":1,"connectionCount":1}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:37.216+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn1","msg":"client metadata","attr":{"remote":"172.26.0.1:60926","client":"conn1","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.6.8"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"21.3.0"},"platform":"'Node.js v14.17.6, LE (unified)","version":"3.6.8|5.13.2"}}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:37.223+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.26.0.1:60928","uuid":"5ac135b6-9fb9-467d-8fac-5bdcd000abac","connectionId":2,"connectionCount":2}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:37.223+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn2","msg":"client metadata","attr":{"remote":"172.26.0.1:60928","client":"conn2","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.6.8"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"21.3.0"},"platform":"'Node.js v14.17.6, LE (unified)","version":"3.6.8|5.13.2"}}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:37.252+00:00"},"s":"I",  "c":"ACCESS",   "id":20250,   "ctx":"conn2","msg":"Authentication succeeded","attr":{"mechanism":"SCRAM-SHA-256","speculative":true,"principalName":"the_username","authenticationDatabase":"the_database","remote":"172.26.0.1:60928","extraInfo":{}}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:47.734+00:00"},"s":"I",  "c":"NETWORK",  "id":22943,   "ctx":"listener","msg":"Connection accepted","attr":{"remote":"172.26.0.1:60930","uuid":"0ebec133-4a97-40f6-84fe-186c612e1638","connectionId":3,"connectionCount":3}}
+[36mtodo-backend-mongo-1  |[0m {"t":{"$date":"2022-02-24T02:26:47.737+00:00"},"s":"I",  "c":"NETWORK",  "id":51800,   "ctx":"conn3","msg":"client metadata","attr":{"remote":"172.26.0.1:60930","client":"conn3","doc":{"driver":{"name":"nodejs|Mongoose","version":"3.6.8"},"os":{"type":"Darwin","name":"darwin","architecture":"x64","version":"21.3.0"},"platform":"'Node.js v14.17.6, LE (unified)","version":"3.6.8|5.13.2"}}}
+^CGracefully stopping... (press Ctrl+C again to force)
+[1A[1B[0G[?25l[+] Running 0/0
+[37m ⠋ Container todo-backend-mongo-1  Stopping                                                                            0.1s
+[0m[?25h[1A[1A[0G[?25l[+] Running 0/1
+[37m ⠙ Container todo-backend-mongo-1  Stopping                                                                            0.2s
+[0m[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+[34m ⠿ Container todo-backend-mongo-1  Stopped                                                                             0.2s
+[0m[?25hcanceled
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hdocker-compose -f docker-compose.dev.yml up -d[?2004l
+[1A[1B[0G[?25l[+] Running 0/0
+[37m ⠿ Container todo-backend-mongo-1  Starting                                                                            0.1s
+[0m[?25h[1A[1A[0G[?25l[+] Running 0/1
+[37m ⠿ Container todo-backend-mongo-1  Starting                                                                            0.2s
+[0m[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+[34m ⠿ Container todo-backend-mongo-1  Started                                                                             0.2s
+[0m[?25h[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hddocker container ls[?2004l
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                     NAMES
+a292e69c88a7   mongo     "docker-entrypoint.s…"   47 seconds ago   Up 13 seconds   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004h[7mdocker exec -it todo-backend-mongo-1 bash^G[27m[43D[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27m-[27mi[27mt[27m [27mt[27mo[27md[27mo[27m-[27mb[27ma[27mc[27mk[27me[27mn[27md[27m-[27mm[27mo[27mn[27mg[27mo[27m-[27m1[27m [27mb[27ma[27ms[27mh[2C[27m [27m [?2004l
+]0;root@a292e69c88a7: /root@a292e69c88a7:/# mongo -u root -p example
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("c7986bd9-a45e-43f3-884c-988b55d1a21f") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+	https://docs.mongodb.com/
+Questions? Try the MongoDB Developer Community Forums
+	https://community.mongodb.com
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database[3G[Juse the_database[19G
+switched to db the_database
+> show collections[3G[Jshow collections[19G
+todos
+> db.todos.find()[3G[Jdb.todos.find[1;34m([0m)[17G[3G[Jdb.todos.find([1;34m)[0m[16G[3G[Jdb.todos.find[1;34m([0m)[17G[3G[Jdb.todos.find([1;34m{[0m)[18G[3G[Jdb.todos.find[1;34m([0m{})[19G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("62169a5b916f39597aeaa4b8"), "text" : "Mohko", "done" : false }
+{ "_id" : ObjectId("62169a5b916f39597aeaa4b9"), "text" : "Learn about containers", "done" : false }
+> [3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({}[19G[3G[Jdb.todos.find({[18G[3G[Jdb.todos.find([17G[3G[Jdb.todos.find[16G[3G[Jdb.todos.fin[15G[3G[Jdb.todos.fi[14G[3G[Jdb.todos.f[13G[3G[Jdb.todos.[12GinsertOne()[3G[Jdb.todos.insertOne[1;34m([0m)[22G[3G[Jdb.todos.insertOne([1;34m)[0m[21G[3G[Jdb.todos.insertOne[1;34m([0m)[22G[3G[Jdb.todos.insertOne[1;34m([0mI)[23G[3G[Jdb.todos.insertOne[1;34m([0mIn)[24G[3G[Jdb.todos.insertOne[1;34m([0mInc)[25G[3G[Jdb.todos.insertOne[1;34m([0mIncr)[26G[3G[Jdb.todos.insertOne[1;34m([0mIncre)[27G[3G[Jdb.todos.insertOne[1;34m([0mIncrea)[28G[3G[Jdb.todos.insertOne[1;34m([0mIncreas)[29G[3G[Jdb.todos.insertOne[1;34m([0mIncrease)[30G[3G[Jdb.todos.insertOne[1;34m([0mIncrease )[31G[3G[Jdb.todos.insertOne[1;34m([0mIncrease t)[32G[3G[Jdb.todos.insertOne[1;34m([0mIncrease th)[33G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the)[34G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the )[35G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the n)[36G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the nu)[37G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the num)[38G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the numb)[39G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the numbe)[40G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number)[41G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number )[42G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number o)[43G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of)[44G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of )[45G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of t)[46G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of to)[47G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of too)[48G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tool)[49G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools)[50G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools )[51G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools i)[52G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in)[53G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in )[54G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in m)[55G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my)[56G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my )[57G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my t)[58G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my to)[59G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my too)[60G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my tool)[61G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my toolb)[62G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my toolbe)[63G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my toolbel)[64G[3G[Jdb.todos.insertOne[1;34m([0mIncrease the number of tools in my toolbelt)[65G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[64G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[63G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[62G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[61G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[60G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[59G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[58G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[57G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[56G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[55G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[54G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[53G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[52G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[51G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[50G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[49G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[48G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[47G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[46G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[45G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[44G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[43G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[42G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[41G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[40G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[39G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[38G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[37G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[36G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[35G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[34G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[33G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[32G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[31G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[30G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[29G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[28G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[27G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[26G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[25G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[24G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[23G[3G[Jdb.todos.insertOne(Increase the number of tools in my toolbelt)[22G[3G[Jdb.todos.insertOne({Increase the number of tools in my toolbelt)[23G[3G[Jdb.todos.insertOne({ Increase the number of tools in my toolbelt)[24G[3G[Jdb.todos.insertOne({ tIncrease the number of tools in my toolbelt)[25G[3G[Jdb.todos.insertOne({ teIncrease the number of tools in my toolbelt)[26G[3G[Jdb.todos.insertOne({ texIncrease the number of tools in my toolbelt)[27G[3G[Jdb.todos.insertOne({ textIncrease the number of tools in my toolbelt)[28G[3G[Jdb.todos.insertOne({ text:Increase the number of tools in my toolbelt)[29G[3G[Jdb.todos.insertOne({ text: Increase the number of tools in my toolbelt)[30G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[31G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[32G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[33G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[34G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[35G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[36G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[37G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[38G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[39G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[40G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[41G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[42G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[43G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[44G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[45G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[46G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[47G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[48G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[49G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[50G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[51G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[52G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[53G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[54G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[55G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[56G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[57G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[58G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[59G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[60G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[61G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[62G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[63G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[64G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[65G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[66G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[67G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[68G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[69G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[70G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[71G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[72G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt)[73G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt)[74G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt")[75G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt",)[76G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", )[77G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", d)[78G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", do)[79G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", don)[80G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done)[81G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done:)[82G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: )[83G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: f)[84G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: fa)[85G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: fal)[86G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: fals)[87G[3G[Jdb.todos.insertOne([1;34m{[0m text: "Increase the number of tools in my toolbelt", done: false)[88G[3G[Jdb.todos.insertOne[1;34m([0m{ text: "Increase the number of tools in my toolbelt", done: false})[89G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt", done: false})[90G[3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt", done: false})[90G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("6216ee1a620e08f4c874327a")
+}
+> [3G[Jdb.todos.insertOne({ text: "Increase the number of tools in my toolbelt", done: false})[90G[3G[Jdb.todos.find({})[20G[3G[Jdb.todos.find({})[20G
+{ "_id" : ObjectId("62169a5b916f39597aeaa4b8"), "text" : "Mohko", "done" : false }
+{ "_id" : ObjectId("62169a5b916f39597aeaa4b9"), "text" : "Learn about containers", "done" : false }
+{ "_id" : ObjectId("6216ee1a620e08f4c874327a"), "text" : "Increase the number of tools in my toolbelt", "done" : false }
+> exit[3G[Jexit[7G
+bye
+]0;root@a292e69c88a7: /root@a292e69c88a7:/# ^C
+]0;root@a292e69c88a7: /root@a292e69c88a7:/# exit
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hccd ..[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-app % [K[?2004hccd c  ggit log --oneline[?2004l
+[?1h=[33m5397939[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m 12.7, route fixed for single get and put method[m
+[33m5581dba[m[33m ([m[1;31morigin/main[m[33m)[m mongo setting in container[m
+[33md54627e[m docker-compose file created[m
+[33m270ec4e[m 12.5, express app contanarized[m
+[33mccf6b39[m node js install in container[m
+[33mb486de5[m docker-container run with ubuntu bash[m
+[33m3968ba8[m docker-container run with ubuntu bash[m
+[33me0e4d81[m exercise12_1[m
+[33m227ce2c[m first commit[m
+[K[?1l>[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-app % [K[?2004hggit add todo-backend[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-app % [K[?2004hggit commit -m""i"n"s"e"r"t" "d"a"t"a" "i"n"t"o" "c"o"l"l"" " " " d"b" "c"o"l"l"e"c"t"i"o"n"s" "f"r"o"m" "c"o"n"t"a"i"n"e"r"[1C[?2004l
+[main d49d54a] insert data into db collections from container
+ 31 files changed, 75 insertions(+), 34 deletions(-)
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-23T23-05-37Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-23T23-16-37Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-23T23-18-59Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-23T23-20-53Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-23T23-37-57Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-24T00-01-11Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-24T00-04-22Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-24T01-57-03Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-24T01-59-24Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-24T02-26-26Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-24T02-27-00Z-00000
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.interim
+ rename todo-app/todo-backend/mongo_data/journal/{WiredTigerLog.0000000005 => WiredTigerLog.0000000016} (99%)
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-app % [K[?2004hmmongo   m  cclear[?2004l
+[H[2J[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-app % [K[?2004hmmongo[?2004l
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("4837c1a6-28a3-4325-a022-a8929894e76f") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting: 
+        2022-02-24T03:21:35.655+02:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin            0.000GB
+bloglist         0.000GB
+config           0.000GB
+local            0.000GB
+movies-database  0.000GB
+> [3G[J[3G^C
+bye
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-app % [K[?2004hccd todo-backend[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hmmongo[?2004l
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("52954432-df8d-4f31-a13f-d3e49b1aadd0") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting: 
+        2022-02-24T03:21:35.655+02:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs[3G[Jshow dbs[11G
+admin            0.000GB
+bloglist         0.000GB
+config           0.000GB
+local            0.000GB
+movies-database  0.000GB
+> exit[3G[Jexit[7G
+bye
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/modules/cjs/loader.js:892
+  throw err;
+  ^
+
+Error: Cannot find module 'redis'
+Require stack:
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/routes/index.js
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/app.js
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/bin/www
+[90m    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)[39m
+[90m    at Function.Module._load (internal/modules/cjs/loader.js:745:27)[39m
+[90m    at Module.require (internal/modules/cjs/loader.js:961:19)[39m
+[90m    at require (internal/modules/cjs/helpers.js:92:18)[39m
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:1:15)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m
+[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)[39m
+[90m    at Module.load (internal/modules/cjs/loader.js:937:32)[39m
+[90m    at Function.Module._load (internal/modules/cjs/loader.js:778:12)[39m
+[90m    at Module.require (internal/modules/cjs/loader.js:961:19)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js'[39m,
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/routes/index.js'[39m,
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/app.js'[39m,
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/bin/www'[39m
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/modules/cjs/loader.js:892
+  throw err;
+  ^
+
+Error: Cannot find module 'redis'
+Require stack:
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/routes/index.js
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/app.js
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/bin/www
+[90m    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)[39m
+[90m    at Function.Module._load (internal/modules/cjs/loader.js:745:27)[39m
+[90m    at Module.require (internal/modules/cjs/loader.js:961:19)[39m
+[90m    at require (internal/modules/cjs/helpers.js:92:18)[39m
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:1:15)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m
+[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)[39m
+[90m    at Module.load (internal/modules/cjs/loader.js:937:32)[39m
+[90m    at Function.Module._load (internal/modules/cjs/loader.js:778:12)[39m
+[90m    at Module.require (internal/modules/cjs/loader.js:961:19)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js'[39m,
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/routes/index.js'[39m,
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/app.js'[39m,
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/bin/www'[39m
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/modules/cjs/loader.js:892
+  throw err;
+  ^
+
+Error: Cannot find module 'redis'
+Require stack:
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/routes/index.js
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/app.js
+- /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/bin/www
+[90m    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)[39m
+[90m    at Function.Module._load (internal/modules/cjs/loader.js:745:27)[39m
+[90m    at Module.require (internal/modules/cjs/loader.js:961:19)[39m
+[90m    at require (internal/modules/cjs/helpers.js:92:18)[39m
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:1:15)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m
+[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)[39m
+[90m    at Module.load (internal/modules/cjs/loader.js:937:32)[39m
+[90m    at Function.Module._load (internal/modules/cjs/loader.js:778:12)[39m
+[90m    at Module.require (internal/modules/cjs/loader.js:961:19)[39m {
+  code: [32m'MODULE_NOT_FOUND'[39m,
+  requireStack: [
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js'[39m,
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/routes/index.js'[39m,
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/app.js'[39m,
+    [32m'/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/bin/www'[39m
+  ]
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6379
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6379'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6379
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6379'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+database connected
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6379
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6379'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6378
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6378'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6378
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6378'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6378
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6378'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6378
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6378'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6378
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6378'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6378
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6378'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+database connected
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6378
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6378'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6379
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6379'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.Connection.openUri (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mmongoose[24m/lib/connection.js:694:11)
+    at /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mmongoose[24m/lib/index.js:351:10
+    at /Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mmongoose[24m/lib/index.js:1149:10)
+    at Mongoose.connect (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mmongoose[24m/lib/index.js:350:20)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/mongo/index.js:7:4)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m
+[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)[39m
+[90m    at Module.load (internal/modules/cjs/loader.js:937:32)[39m
+[90m    at Function.Module._load (internal/modules/cjs/loader.js:778:12)[39m
+[90m    at Module.require (internal/modules/cjs/loader.js:961:19)[39m
+[90m    at require (internal/modules/cjs/helpers.js:92:18)[39m
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/routes/todos.js:2:18)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+database connected
+[0mGET /todos [36m304 [0m36.915 ms - -[0m
+[0mGET /todos [36m304 [0m6.984 ms - -[0m
+[0mGET / [36m304 [0m1.567 ms - -[0m
+[0mGET /todos [36m304 [0m6.674 ms - -[0m
+[0mGET /todos [36m304 [0m5.320 ms - -[0m
+^C
+[1m[7m%[27m[1m[0m                                                                                                                            [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hnnpm run dev[?2004l
+
+> todo-express-backend@0.0.0 dev
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.12[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+internal/url.js:279
+  throw new ERR_INVALID_URL(input);
+  ^
+
+TypeError [ERR_INVALID_URL]: Invalid URL: //localhost:6379
+[90m    at onParseError (internal/url.js:279:9)[39m
+[90m    at new URL (internal/url.js:355:5)[39m
+    at Function.parseURL (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:113:76)
+    at Commander._RedisClient_initiateOptions (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:294:36)
+    at new RedisClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:77:148)
+    at new Commander (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/commander.js:18:17)
+    at create (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4m@node-redis[24m/client/dist/lib/client/index.js:109:16)
+    at Object.createClient (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/node_modules/[4mredis[24m/dist/index.js:34:38)
+    at Object.<anonymous> (/Users/pasang/Project/part12-containers-applications/todo-app/todo-backend/redis/index.js:16:24)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1072:14)[39m {
+  input: [32m'//localhost:6379'[39m,
+  code: [32m'ERR_INVALID_URL'[39m
+}
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
