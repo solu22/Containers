@@ -77,3 +77,116 @@ OK
 1) "count"
 2) "added_todos_count"
 127.0.0.1:6379> 
+[?2004hroot@077705ce1cd6:/data# ^C[?2004l[?2004h[?2004l
+[?2004hroot@077705ce1cd6:/data# ^C[?2004l[?2004h[?2004l
+[?2004hroot@077705ce1cd6:/data# [?2004l
+exit
+[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hggit add .[?2004l
+[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hggit commit -m ""1"2"."9" "-" "1"2"."1"1"," "r"e"d"i"s" "s"e"t"u"p" "c"l"i"" " " " " " " " " " -"c"l"i" "s"e"t"u"p" "w"i"t" [K[A[90Ch"[A[90C" [K[A[89C"[K[1B[K[A[89C[?2004l[1B[main 3a53872] 12.9 - 12.11, redis-cli setup wi
+ 23 files changed, 119 insertions(+), 4 deletions(-)
+ create mode 100644 todo-app/todo-backend/dump.rdb
+ create mode 100644 todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2022-02-24T04-46-53Z-00000
+ rewrite todo-app/todo-backend/mongo_data/diagnostic.data/metrics.interim (100%)
+ rename todo-app/todo-backend/mongo_data/journal/{WiredTigerLog.0000000016 => WiredTigerLog.0000000017} (99%)
+ create mode 100644 todo-app/todo-backend/request.REST
+ create mode 100644 todo-app/todo-backend/routes/stats.js
+ create mode 100644 todo-app/todo-backend/typescript
+[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hggit log --oneline[?2004l
+[?1h=[33m3a53872[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m 12.9 - 12.11, redis-cli setup wi[m
+[33md49d54a[m insert data into db collections from container[m
+[33m5397939[m 12.7, route fixed for single get and put method[m
+[33m5581dba[m[33m ([m[1;31morigin/main[m[33m)[m mongo setting in container[m
+[33md54627e[m docker-compose file created[m
+[33m270ec4e[m 12.5, express app contanarized[m
+[33mccf6b39[m node js install in container[m
+[33mb486de5[m docker-container run with ubuntu bash[m
+[33m3968ba8[m docker-container run with ubuntu bash[m
+[33me0e4d81[m exercise12_1[m
+[33m227ce2c[m first commit[m
+[K[?1l>[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hcclear[?2004l
+[H[2J[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004h[7mdocker-compose -f docker-compose.dev.yml down[27m[45D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27m-[27mf[27m [27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m.[27md[27me[27mv[27m.[27my[27mm[27ml[27m [27md[27mo[27mw[27mn[?2004l
+[1A[1B[0G[?25l[+] Running 0/0
+[37m ⠋ Container todo-backend-redis-1  Stopping                                           0.1s
+[0m[37m ⠋ Container todo-backend-mongo-1  Stopping                                           0.1s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Running 0/2
+[37m ⠙ Container todo-backend-redis-1  Stopping                                           0.2s
+[0m[37m ⠙ Container todo-backend-mongo-1  Stopping                                           0.2s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+[34m ⠿ Container todo-backend-redis-1  Removed                                            0.3s
+[0m[37m ⠹ Container todo-backend-mongo-1  Stopping                                           0.3s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Running 3/2
+[34m ⠿ Container todo-backend-redis-1  Removed                                            0.3s
+[0m[34m ⠿ Container todo-backend-mongo-1  Removed                                            0.3s
+[0m[34m ⠿ Network todo-backend_default    Removed                                            0.0s
+[0m[?25h[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hdocker-compose -f docker-compose.dev.yml down[45Dclear                                        [40Ddocker-compose -f docker-compose.dev.yml down    up -d[?2004l
+[1A[1B[0G[?25l[+] Running 1/0
+[34m ⠿ Network todo-backend_default    Created                                            0.0s
+[0m[37m ⠿ Container todo-backend-mongo-1  Starting                                           0.1s
+[0m[37m ⠿ Container todo-backend-redis-1  Starting                                           0.1s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+[34m ⠿ Network todo-backend_default    Created                                            0.0s
+[0m[37m ⠿ Container todo-backend-mongo-1  Starting                                           0.2s
+[0m[37m ⠿ Container todo-backend-redis-1  Starting                                           0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+[34m ⠿ Network todo-backend_default    Created                                            0.0s
+[0m[37m ⠿ Container todo-backend-mongo-1  Starting                                           0.3s
+[0m[37m ⠿ Container todo-backend-redis-1  Starting                                           0.3s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+[34m ⠿ Network todo-backend_default    Created                                            0.0s
+[0m[34m ⠿ Container todo-backend-mongo-1  Started                                            0.3s
+[0m[34m ⠿ Container todo-backend-redis-1  Started                                            0.3s
+[0m[?25h[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hdocker-compose -f docker-compose.dev.yml up -d    down[?2004l
+[1A[1B[0G[?25l[+] Running 0/0
+[37m ⠋ Container todo-backend-mongo-1  Stopping                                           0.1s
+[0m[37m ⠋ Container todo-backend-redis-1  Stopping                                           0.1s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+[37m ⠿ Container todo-backend-mongo-1  Removing                                           0.2s
+[0m[34m ⠿ Container todo-backend-redis-1  Removed                                            0.2s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Running 3/2
+[34m ⠿ Container todo-backend-mongo-1  Removed                                            0.2s
+[0m[34m ⠿ Container todo-backend-redis-1  Removed                                            0.2s
+[0m[34m ⠿ Network todo-backend_default    Removed                                            0.0s
+[0m[?25h[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hdocker-compose -f docker-compose.dev.yml downup -d[?2004l
+[1A[1B[0G[?25l[+] Running 1/0
+[34m ⠿ Network todo-backend_default    Created                                            0.0s
+[0m[37m ⠋ Container todo-backend-redis-1  Creating                                           0.0s
+[0m[37m ⠋ Container todo-backend-mongo-1  Creating                                           0.0s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+[34m ⠿ Network todo-backend_default    Created                                            0.0s
+[0m[37m ⠿ Container todo-backend-redis-1  Starting                                           0.1s
+[0m[37m ⠿ Container todo-backend-mongo-1  Starting                                           0.1s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+[34m ⠿ Network todo-backend_default    Created                                            0.0s
+[0m[37m ⠿ Container todo-backend-redis-1  Starting                                           0.2s
+[0m[37m ⠿ Container todo-backend-mongo-1  Starting                                           0.2s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+[34m ⠿ Network todo-backend_default    Created                                            0.0s
+[0m[34m ⠿ Container todo-backend-redis-1  Started                                            0.3s
+[0m[34m ⠿ Container todo-backend-mongo-1  Started                                            0.3s
+[0m[?25h[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hdocker-compose -f docker-compose.dev.yml up -ddown [?2004l
+[1A[1B[0G[?25l[+] Running 0/0
+[37m ⠋ Container todo-backend-redis-1  Stopping                                           0.1s
+[0m[37m ⠋ Container todo-backend-mongo-1  Stopping                                           0.1s
+[0m[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+[34m ⠿ Container todo-backend-redis-1  Removed                                            0.1s
+[0m[34m ⠿ Container todo-backend-mongo-1  Removed                                            0.2s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Running 3/2
+[34m ⠿ Container todo-backend-redis-1  Removed                                            0.1s
+[0m[34m ⠿ Container todo-backend-mongo-1  Removed                                            0.2s
+[0m[34m ⠿ Network todo-backend_default    Removed                                            0.0s
+[0m[?25h[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004hddocker image ls[?2004l
+REPOSITORY         TAG       IMAGE ID       CREATED        SIZE
+todo-backend       latest    61886ca0e77c   26 hours ago   875MB
+backend-server     latest    0bee56c8880f   26 hours ago   875MB
+express-server     latest    71295142beec   30 hours ago   863MB
+<none>             <none>    899b6cf0a668   30 hours ago   863MB
+<none>             <none>    8151543e3d9b   31 hours ago   857MB
+fs-hello-world     latest    fa13b544f81b   32 hours ago   851MB
+hello-node-world   latest    b9a23c4cdd11   2 days ago     239MB
+node               16        124510085bf4   2 weeks ago    851MB
+mongo              latest    c872a4342187   3 weeks ago    663MB
+ubuntu             latest    a457a74c9aaa   3 weeks ago    65.6MB
+redis              latest    6f72dd2e7b80   4 weeks ago    107MB
+nginx              latest    2e7e2ec411a6   4 weeks ago    134MB
+hello-world        latest    18e5af790473   5 months ago   9.14kB
+[1m[7m%[27m[1m[0m                                                                                           [0m[27m[24m[Jpasang@Pasangs-MacBook-Pro todo-backend % [K[?2004h
