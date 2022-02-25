@@ -1,6 +1,10 @@
 const redis = require('redis')
 const { promisify } = require('util')
-const { REDIS_URL } = require('../util/config')
+
+
+
+const REDIS_URL = 'redis://localhost:6378'
+
 
 let getAsync
 let setAsync
@@ -15,7 +19,7 @@ if (!REDIS_URL) {
 } else {
   const client = redis.createClient({
     url: REDIS_URL
-  })
+  });
     
   getAsync = promisify(client.get).bind(client)
   setAsync = promisify(client.set).bind(client) 
