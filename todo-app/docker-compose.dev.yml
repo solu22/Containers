@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    expose:
+      - 27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: the_database
+    container_name: mongo-db-container
+    volumes:
+      - ./todo-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - ./todo-backend/mongo/mongo_data:/data/db
+
+  redis:
+    image: redis:latest
+    expose:
+      - 6379
+    command: [ 'redis-server', '--appendonly', 'yes' ]
+    volumes:
+      - ./todo-backend/redis_data:/data
+    container_name: cache
+
+  frontend:
+    restart: always
+    stdin_open: true
+    build:
+      dockerfile: dev.Dockerfile
+      context: ./todo-frontend
+    volumes:
+      - ./app/node_modules
+      - ./todo-frontend:/app
+    # ports:
+    #   - 3000:3000
+    depends_on:
+      - backend
+    container_name: todo-frontend-container
+
+  nginx:
+    restart: always
+    depends_on:
+      - backend
+      - frontend
+    build:
+      context: ./nginx
+      dockerfile: dev.Dockerfile
+    ports:
+      - 8080:80
+    container_name: reverse-proxy-container
+
+  backend:
+    restart: always
+    image: todo-backend-dev
+    build:
+      dockerfile: dev.Dockerfile
+      context: ./todo-backend
+    volumes:
+      - /app/node_modules
+      - ./todo-backend:/app
+    # ports:
+    #   - 3001:3001
+    depends_on:
+      - mongodb
+      # - redis
+    environment:
+      - MONGO_URL=mongodb://the_username:the_password@mongodb:27017/the_database
+      - REDIS_URL=redis://cache
+    container_name: todo-backend-container
+
+volumes:
+  mongo_data:
