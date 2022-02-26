@@ -8,8 +8,9 @@ const statRouter = require('./routes/stats');
 
 
 const app = express();
-
 app.use(cors());
+require('./mongo/index')
+
 
 app.use(logger('dev'));
 app.use(express.json());
